@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El Faro - Periódico Digital</title>
+  <!-- Importación de Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- Importación de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="/style/style.css" rel="stylesheet">
+</head>
+<body id="top">
+  <!-- Sección superior de avisos -->
+  <div class="notification is-announcement has-text-centered">
+    <button class="delete"></button>
+    <strong>¡Última hora!</strong> Descarga nuestra nueva aplicación para acceder a noticias exclusivas. <a href="#">Saber más</a>
+  </div>
+
+  <!-- Encabezado -->
+  <header class="hero">
+    <div class="hero-body py-4">
+      <div class="container">
+        <div class="columns is-vcentered is-mobile is-multiline">
+          <!-- Logo -->
+          <div class="column is-narrow is-flex is-align-items-center">
+            <figure class="image is-48x48 mr-3">
+              <img src="/media/faro.png" alt="Logo El Faro" class="has-shadow">
+            </figure>
+          </div>  
+          <!-- Título y subtítulo -->
+          <div class="column is-flex is-flex-direction-column is-justify-content-center">
+            <h1 class="title is-4 mb-1">El Faro</h1>
+            <p class="subtitle is-6 mb-0"><strong>Iluminando la verdad desde 1985</strong></p>
+          </div>  
+          <!-- Reloj a la derecha -->
+          <div class="column is-narrow is-flex is-align-items-center is-justify-content-flex-end">
+            <div id="reloj" class="has-text-grey is-size-7 is-flex is-align-items-center">
+              <span class="icon mr-1">
+                <i class="fas fa-clock"></i>
+              </span>
+              <span id="hora-actual"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menú centrado y moderno -->
+    <div class="navbar-container">
+      <nav class="navbar is-transparent">
+        <div class="container">
+          <div class="navbar-menu is-active is-centered">
+            <div class="navbar-start" style="margin: 0 auto;">
+              <a class="navbar-item has-text-weight-bold" href="/index.html">
+                <span>INICIO</span>
+              </a>
+              <a class="navbar-item has-text-weight-bold" href="/index.html#deportes">
+                <span>DEPORTE</span>
+              </a>
+              <a class="navbar-item has-text-weight-bold" href="/index.html#negocios">
+                <span>NEGOCIOS</span>
+              </a>
+              <a class="navbar-item has-text-weight-bold" href="/index.html#multimedia">
+                <span>MULTIMEDIA</span>
+              </a>
+              <a class="navbar-item has-text-weight-bold" href="contacto.html">
+                <span>CONTACTO</span>
+              </a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link has-text-weight-bold">
+                  MÁS
+                </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="/index.html#cultura">Cultura</a>
+                  <a class="navbar-item" href="/index.html#tecnologia">Tecnología</a>
+                  <a class="navbar-item" href="/index.html#opinion">Opinión</a>
+                  <a class="navbar-item" href="/index.html#internacional">Internacional</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <!-- Artículo principal -->
+        <div class="column is-8">
+          <article class="box">
+            <h1 class="title is-2">Pescadores artesanales de Caleta Lo Rojas suspenden sus servicios a empresa Blumar, dueños de embarcación Cobra</h1>
+            
+            <div class="level is-mobile mb-4">
+              <div class="level-left">
+                <div class="level-item">
+                  <span class="icon has-text-grey mr-1">
+                    <i class="fas fa-user"></i>
+                  </span>
+                  <span class="has-text-grey">Por: Elena Rodríguez</span>
+                </div>
+                <div class="level-item">
+                  <span class="icon has-text-grey mr-1">
+                    <i class="fas fa-calendar"></i>
+                  </span>
+                  <span class="has-text-grey">5 de abril de 2025</span>
+                </div>
+                <div class="level-item">
+                  <span class="tag is-primary">BioBío</span>
+                </div>
+              </div>
+            </div>
+
+            <figure class="image is-16by9 mb-5">
+              <img src="/media/Lo_Rojas.jpg" alt="Caleta Lo Rojas" class="has-shadow">
+            </figure>
+            
+            <div class="content">
+              <p class="has-text-weight-bold is-size-5">La decisión fue anunciada por la Asociación Gremial Lo Rojas de Coronel, en solidaridad con las familias de los siete tripulantes desaparecidos de la lancha Bruma.</p>
+              
+              <p>La tarde de este domingo 6 de abril, la Asociación Gremial Lo Rojas de Coronel anunció que suspenderá sus servicios a la pesquera Blumar, empresa dueña de la embarcación "Cobra", y principal sindicada como responsable en el hundimiento de la lancha "Bruma", la cual iba con siete pescadores a bordo, los cuales continúan desaparecidos.</p>
+              
+              <p>La decisión fue tomada de forma unánime, en solidaridad con las familias de los siete pescadores desaparecidos. "Lamentamos profundamente la pérdida de ellos y el poco esclarecimiento que hay con respecto al tema. Hemos determinado suspender todos los movimientos hasta que se esclarezca este asunto y se vayan desenredando los cientos de hipótesis que nos hacemos, y que se han dado en las últimas horas", indican desde la organización gremial, presidida por Francisco Silva Burgos.</p>
+              
+              <p>Dentro del comunicado, la organización indicó la importancia de esclarecer las dudas que existen sobre el accidente sufrido por la lancha Bruma, así como también la posterior desaparición de uno de los tripulantes de la embarcación Cobra, el pasado viernes 4 de abril.</p>
+              
+              <blockquote class="notification is-light is-italic">
+                "Todo esto nos genera miles de dudas, y la autoridad ha tenido poca disponibilidad para esclarecer los hechos", agregó Silva.
+              </blockquote>
+              
+              <p>La Caleta está compuesta de 500 embarcaciones artesanales, a las cuales el muelle artesanal les presta servicios, en una zona por donde pasa el mayor movimiento que ocurre en la bahía. Hasta la fecha son 13 los pescadores artesanales fallecidos en diferentes siniestros, lo que preocupa al gremio de la pesca artesanal.</p>
+            </div>
+            
+            <!-- Botones de navegación entre noticias -->
+            <div class="buttons is-centered mt-6">
+              <a href="/index.html" class="button is-link is-outlined">
+                <span class="icon">
+                  <i class="fas fa-arrow-left"></i>
+                </span>
+                <span>Volver al inicio</span>
+              </a>
+              <a href="/view/quehoraes.html" class="button is-link">
+                <span>Siguiente noticia</span>
+                <span class="icon">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </article>
+          
+          <!-- Sección de comentarios -->
+          <div class="box mt-5">
+            <h3 class="title is-4">Comentarios</h3>
+            <article class="media">
+              <figure class="media-left">
+                <p class="image is-48x48">
+                  <img class="is-rounded" src="https://bulma.io/images/placeholders/96x96.png">
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="field">
+                  <p class="control">
+                    <textarea class="textarea" placeholder="Escribe tu comentario..."></textarea>
+                  </p>
+                </div>
+                <div class="field">
+                  <p class="control">
+                    <button class="button is-primary">Publicar comentario</button>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        
+        <!-- Barra lateral -->
+        <div class="column is-4">
+          <!-- Widget de noticias recientes -->
+          <div class="box">
+            <h3 class="title is-4">Últimas noticias</h3>
+            <div class="media mb-3">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img src="/media/que hora es.jpg" alt="Cambio de horario">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-6">
+                  <a href="/view/quehoraes.html">¿Qué hora es? Chile vivió el cambio al horario de invierno</a>
+                </p>
+                <p class="subtitle is-7">Hace 5 horas</p>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img src="/media/buque san juan.jpg" alt="Buque San Juan">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-6">
+                  <a href="/view/BuqueSanJuan.html">Buque Juan Sebastián Elcano abre sus puertas al público este fin de semana</a>
+                </p>
+                <p class="subtitle is-7">Hace 8 horas</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Widget de Deportes -->
+          <div class="box">
+            <h3 class="title is-4">Deportes</h3>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1TG7tQfRkm8WWATEtDLS5k?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+          
+          <!-- Widget de Negocios -->
+          <div class="box">
+            <h3 class="title is-4">Negocios</h3>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1X07eL8HpsLSJJFCB5nAgw?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+          
+          <!-- Widget de clima -->
+          <div class="box has-text-centered">
+            <h3 class="title is-4">El tiempo</h3>
+            <div class="columns is-mobile is-centered">
+              <div class="column is-narrow">
+                <div class="icon is-large">
+                  <i class="fas fa-sun fa-3x has-text-warning"></i>
+                </div>
+                <p class="title is-4 mt-3">22°C</p>
+                <p class="subtitle is-6">Coronel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de noticias relacionadas -->
+  <section class="section has-background-light">
+    <div class="container">
+      <h3 class="title is-4 has-text-centered mb-5">Noticias relacionadas</h3>
+      <div class="columns">
+        <div class="column is-4">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="/media/buque san juan.jpg" alt="Buque San Juan">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Buque Juan Sebastián Elcano abre sus puertas al público</p>
+              <p class="subtitle is-6">Valparaíso | Hace 8 horas</p>
+              <div class="content">
+                Con casi un siglo de historia surcando los mares, el buque escuela Juan Sebastián Elcano, de La Armada Española, se encuentra atracado en Valparaíso.
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="/view/BuqueSanJuan.html" class="card-footer-item">Leer más</a>
+            </footer>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="/media/que hora es.jpg" alt="Cambio de hora">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Chile vivió el cambio al horario de invierno</p>
+              <p class="subtitle is-6">Nacional | Hace 5 horas</p>
+              <div class="content">
+                En concreto, a las 00:00 horas los relojes se atrasaron hasta las 23:00 horas en parte de Chile.
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="/view/quehoraes.html" class="card-footer-item">Leer más</a>
+            </footer>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="/media/Gareca dt chile.jpg" alt="Fútbol">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Gareca nunca asumió con total compromiso dirigir a Chile</p>
+              <p class="subtitle is-6">Fútbol | Hace 3 horas</p>
+              <div class="content">
+                "Es un técnico que consiguió muchas cosas, probablemente tiene poca hambre de seguir consiguiendo más y creo que lo demostró en los hechos", aseguró Fernando Tapia.
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="/view/Gareca nunca asumio.html" class="card-footer-item">Leer más</a>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de suscripción -->
+  <section class="section has-background-primary">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column is-6">
+          <h3 class="title is-3 has-text-white">Suscríbete a nuestro boletín</h3>
+          <p class="subtitle is-5 has-text-white">Recibe las noticias más importantes directamente en tu correo.</p>
+        </div>
+        <div class="column is-6">
+          <div class="field has-addons">
+            <div class="control is-expanded">
+              <input class="input is-medium" type="email" placeholder="Tu correo electrónico">
+            </div>
+            <div class="control">
+              <button class="button is-dark is-medium">Suscribirme</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer has-background-dark has-text-white">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3">
+          <h4 class="title is-4 has-text-white">El Faro</h4>
+          <figure class="image is-96x96">
+            <img src="/media/faro.png" alt="Logo El Faro">
+          </figure>
+          <p class="mt-3">Iluminando la verdad desde 1985. El periódico digital más confiable de la región.</p>
+        </div>
+        <div class="column is-3">
+          <h5 class="title is-5 has-text-white">Secciones</h5>
+          <ul class="footer-menu">
+            <li><a href="/index.html#inicio" class="has-text-grey-light">Noticias Generales</a></li>
+            <li><a href="/index.html#deportes" class="has-text-grey-light">Deportes</a></li>
+            <li><a href="/index.html#negocios" class="has-text-grey-light">Negocios</a></li>
+            <li><a href="/index.html#cultura" class="has-text-grey-light">Cultura</a></li>
+            <li><a href="/index.html#tecnologia" class="has-text-grey-light">Tecnología</a></li>
+            <li><a href="/index.html#opinion" class="has-text-grey-light">Opinión</a></li>
+          </ul>
+        </div>
+        <div class="column is-3">
+          <h5 class="title is-5 has-text-white">Enlaces útiles</h5>
+          <ul class="footer-menu">
+            <li><a href="#" class="has-text-grey-light">Quiénes somos</a></li>
+            <li><a href="#" class="has-text-grey-light">Términos y condiciones</a></li>
+            <li><a href="#" class="has-text-grey-light">Política de privacidad</a></li>
+            <li><a href="#" class="has-text-grey-light">Publicidad</a></li>
+            <li><a href="contacto.html" class="has-text-grey-light">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="column is-3">
+          <h5 class="title is-5 has-text-white">Contacto</h5>
+          <p><i class="fas fa-map-marker-alt mr-2"></i> Av. Principal 123, Santiago</p>
+          <p><i class="fas fa-phone mr-2"></i> 123-456-789</p>
+          <p><i class="fas fa-envelope mr-2"></i> contacto@elfaro.com</p>
+          <div class="buttons mt-3">
+            <a class="button is-small is-info is-outlined is-rounded" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="button is-small is-link is-outlined is-rounded" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="button is-small is-danger is-outlined is-rounded" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="button is-small is-dark is-outlined is-rounded" href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="has-background-grey-dark">
+      <div class="content has-text-centered">
+        <p>© 2025 - El Faro - Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante para subir -->
+  <a href="#top" class="button is-primary is-rounded back-to-top">
+    <span class="icon">
+      <i class="fas fa-arrow-up"></i>
+    </span>
+    <span>Ir arriba</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="/jscript/script.js"></script>
+  <script>
+    // Script para el anuncio superior
+    document.addEventListener('DOMContentLoaded', () => {
+      // Funcionamiento del botón de cierre del anuncio
+      const closeButton = document.querySelector('.notification .delete');
+      closeButton.addEventListener('click', () => {
+        const notification = closeButton.parentNode;
+        notification.parentNode.removeChild(notification);
+      });
+      
+      // Funcionamiento del menú hamburguesa en móviles
+      const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if (navbarBurgers.length > 0) {
+        navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            const target = document.getElementById(el.dataset.target);
+            el.classList.toggle('is-active');
+            target.classList.toggle('is-active');
+          });
+        });
+      }
+      
+      // Actualizar la hora actual
+      function actualizarHora() {
+        const ahora = new Date();
+        const hora = ahora.getHours().toString().padStart(2, '0');
+        const minutos = ahora.getMinutes().toString().padStart(2, '0');
+        document.getElementById('hora-actual').textContent = `${hora}:${minutos}`;
+      }
+      
+      actualizarHora();
+      setInterval(actualizarHora, 60000);
+    });
+  </script>
+</body>
+</html>
